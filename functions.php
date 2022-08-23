@@ -1,5 +1,6 @@
 
 // Regester sidebar 
+add_action( 'widgets_init', 'my_register_sidebars' );
 function themename_widgets_init() {
     register_sidebar( array(
         'name'          => __( 'Right Sidebar', 'theme_name' ),
